@@ -5,6 +5,8 @@ import 'package:go_routers/calculate/calculate_screen.dart';
 import 'package:go_routers/categories/categories_screen.dart';
 import 'package:go_routers/cubits/authentication/authentication_cubit.dart';
 import 'package:go_routers/cubits/calculate/calculate_cubit.dart';
+import 'package:go_routers/cubits/color/color_cubit.dart';
+import 'package:go_routers/cubits/counter/counter_cubit.dart';
 import 'package:go_routers/cubits/theme/theme_cubit.dart';
 import 'package:go_routers/home/home_screen.dart';
 import 'package:go_routers/models/user.dart';
@@ -32,6 +34,14 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (context) => ThemeCubit(),
+        ),
+        BlocProvider(
+          create: (context) => ColorCubit(),
+        ),
+        BlocProvider(
+          create: (context) => CounterCubit(
+            colorCubit: context.read<ColorCubit>(),
+          ),
         )
       ],
       child: BlocBuilder<ThemeCubit, ThemeState>(
