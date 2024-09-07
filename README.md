@@ -1,16 +1,11 @@
-# go_routers
+# Flutter App with Bloc, GoRouter, and Theme Switching
 
-A new Flutter project.
+This Flutter app demonstrates state management with Bloc, user authentication, theme switching, and navigation using `go_router`.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Login Functionality:** User authentication with Bloc state management.
+- **Navigation:** Seamless navigation with `go_router`.
+- **Theme Switching:** Toggle between light and dark themes.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
