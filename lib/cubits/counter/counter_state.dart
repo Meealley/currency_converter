@@ -1,5 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 
+// import 'dart:convert';
+
 part of 'counter_cubit.dart';
 
 class CounterState extends Equatable {
@@ -24,4 +26,20 @@ class CounterState extends Equatable {
       counter: counter ?? this.counter,
     );
   }
+
+  Map<String, dynamic> toJson() {
+    return <String, dynamic>{
+      'counter': counter,
+    };
+  }
+
+  factory CounterState.fromJson(Map<String, dynamic> json) {
+    return CounterState(
+      counter: json['counter'] as int,
+    );
+  }
+
+  // String toJson() => json.encode(toMap());
+
+  // factory CounterState.fromJson(String source) => CounterState.fromMap(json.decode(source) as Map<String, dynamic>);
 }

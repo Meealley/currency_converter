@@ -57,7 +57,16 @@ class CategoriesWidget extends StatelessWidget {
                           "${state.counter}",
                           style: AppTextStyles.headingBold,
                         ),
-                      )
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Center(
+                        child: Text(
+                          convertNumberToWords(state.counter),
+                          style: AppTextStyles.bodySmall,
+                        ),
+                      ),
                     ],
                   ),
                 ),
