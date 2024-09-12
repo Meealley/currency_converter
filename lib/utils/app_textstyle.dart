@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:go_routers/utils/app_colors.dart';
-import 'package:go_routers/utils/app_theme.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppTextStyles {
